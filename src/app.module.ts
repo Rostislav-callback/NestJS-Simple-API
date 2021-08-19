@@ -18,7 +18,7 @@ const environment = process.env.NODE_ENV || 'development';
       isGlobal: true,
     }),
     MongooseModule.forRoot(
-      process.env.MONGODB_WRITE_CONECTION_STRING,
+      'mongodb://user:password@localhost:27017/nestjs-tutorial?authSource=admin&readPreference=primary',
       {
         useNewUrlParser: true,
         useUnifiedTopology:true,
